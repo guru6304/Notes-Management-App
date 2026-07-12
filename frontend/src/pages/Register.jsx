@@ -18,7 +18,10 @@ function Register() {
     password: "",
     confirmPassword: "",
   });
-
+  useEffect(() => {
+    removeToken();
+    removeUser();
+  }, []);
   const [serverError, setServerError] = useState("");
 
   const [loading, setLoading] = useState(false);

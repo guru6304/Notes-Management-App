@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../services/api";
 import { useAuth } from "../context/AuthContext";
+import { removeToken, removeUser } from "../utils/storage";
 
 function Login() {
   const navigate = useNavigate();
@@ -14,6 +15,10 @@ function Login() {
     email: "",
     password: "",
   });
+  useEffect(()=>{
+    removeToken();
+    removeUser();
+  },[])
   const [serverError, setServerError] = useState("");
   const [loading, setLoading] = useState(false);
   const validateField = (name, value) => {
