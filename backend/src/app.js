@@ -4,9 +4,11 @@ const errorHandler = require("./middleware/errorHandler");
 const authRouter = require("./routes/authRoutes");
 const noteRoutes = require("./routes/noteRoutes");
 const app= express();
-
 app.use(cors());
 app.use(express.json());
+app.get("/", (req, res) => {
+    res.send("Notes Management API is running...");
+});
 app.use("/api/auth",authRouter);
 app.use("/api/notes", noteRoutes);
 app.use(errorHandler)
