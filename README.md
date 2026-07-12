@@ -299,7 +299,7 @@ CREATE TABLE notes (
 
 # Live Application
 
-**https://notes-management-592oahrkc-guruswamy.vercel.app/**
+**https://notes-management-app-git-master-guruswamy.vercel.app/**
 
 ```
 __________________________________________
