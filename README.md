@@ -299,27 +299,15 @@ CREATE TABLE notes (
 
 # Live Application
 
-## Frontend
-
-**URL:**
+**https://notes-management-592oahrkc-guruswamy.vercel.app/**
 
 ```
 __________________________________________
 ```
-
-## Backend
-
-**URL:**
-
-```
-__________________________________________
-```
-
----
 
 # GitHub Repository
 
-**Repository URL**
+**https://github.com/guru6304/Notes-Management-App**
 
 ```
 __________________________________________
