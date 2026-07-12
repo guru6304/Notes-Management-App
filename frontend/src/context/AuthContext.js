@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { clearStorage, getToken, getUser, removeToken, removeUser, saveToken, saveUser } from "../utils/storage";
+import { clearStorage, getToken, getUser, saveToken, saveUser } from "../utils/storage";
 
 const AuthContext = createContext();
 export const AuthProvider = ({children})=>{
